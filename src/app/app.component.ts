@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { App } from './app';
 
 @Component({
   moduleId: module.id,
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+	weatherOne: App = new App(123456, 'frisco')
 }
