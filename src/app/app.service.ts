@@ -5,8 +5,8 @@ import { App } from './app';
 
 @Injectable()
 export class AppService {
-  
-  private testUrl = 'http://api.openweathermap.org/data/2.5/weather?q=';
+
+  private testUrl = '//api.openweathermap.org/data/2.5/weather?q=';
   private apiKey = '&appid=6cc3e287c4cede83bd9e993a2aaf7923'
 
   // dependency injection
