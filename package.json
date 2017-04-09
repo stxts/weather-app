@@ -1,6 +1,6 @@
 {
   "name": "weather-app",
-   "version": "1.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
@@ -49,6 +49,6 @@
     "typescript": "~2.0.3"
   },
   "devDependencies": {
+    "@types/core-js": "^0.9.41"
   }
 }
-
