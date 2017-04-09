@@ -1,3 +1,5 @@
+declare var decimal: any
+
 export interface App {
 	id?: number,
  	name?: string,
