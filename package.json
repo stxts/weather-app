@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "license": "MIT",
   "angular-cli": {},
+  "engines": {
+    "node": "7.4.0"
+  },
   "scripts": {
     "start": "http-server",
     "lint": "tslint \"src/**/*.ts\"",
