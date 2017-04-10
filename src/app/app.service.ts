@@ -11,14 +11,14 @@ export class AppService {
   private units = '&units=imperial'
 
   // dependency injection
-	constructor(
-		private http: Http
-	){}
+  constructor(
+    private http: Http
+  ){}
 
-  getCurrentWeather(city):{
+  getCurrentWeather(city){
     return this.http.get(this.testUrl + city + this.units + this.apiKey)
                .map(res => res.json());
-  }	
+  }  
 
   
 }
