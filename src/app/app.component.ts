@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { App } from './app';
 import { AppService } from './app.service';
 import 'rxjs/Rx';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
