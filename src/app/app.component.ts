@@ -15,15 +15,13 @@ import { Http, Response, Headers, RequestOptions } from '@angular/http';
 export class AppComponent {
 	getData: string;
 	@Input() city: string;
-	app: App;
-	mode = "Observable";
 
 	constructor (private appService: AppService){}
 
 	getCurrentWeather(city){
 		this.appService.getCurrentWeather(city.value)
 			.subscribe(
-				app => this.app = app,
+				data => this.getData = JSON.stringify(data),
 				error => alert(error),
 				() => console.log("Finished")
 				);
