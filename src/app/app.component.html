@@ -19,9 +19,11 @@
 <div class="jumbotron" id="results" *ngIf="app">
 <h3><u>Current Weather</u></h3>
   <p>City: <i>{{app.name}}</i></p>
+  <p>Country: <i>{{app.sys.country}}</i></p>
   <p>Weather: <i>{{app.weather[0].main}}</i></p>
   <p>Wind: <i>{{app.wind.speed}} mph</i></p>
   <p>Current Temp: <i>{{app.main.temp}} °F</i></p>
   <p>Max Temp: <i>{{app.main.temp_max}} °F</i></p>
   <p>Min Temp: <i>{{app.main.temp_min}} °F</i></p>
+  <p>Humidity: <i>{{app.main.humidity}} %</i></p>
 </div>

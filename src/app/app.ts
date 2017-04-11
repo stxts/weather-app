@@ -2,7 +2,8 @@ export interface App {
 	id?: number,
 	name?: string,
 	weather: Weather[],
-	wind: Wind
+	wind: Wind,
+	sys: Sys
 }
 
 export interface Weather {
@@ -20,4 +21,8 @@ export interface Main {
 	humidity?: number,
 	temp_min?: number,
 	temp_max?: number
+}
+
+export interface Sys {
+	country?: string
 }
