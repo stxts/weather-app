@@ -1,5 +1,3 @@
-declare var decimal: any
-
 export interface App {
 	id?: number,
 	name?: string,
@@ -12,14 +10,14 @@ export interface Weather {
 }
 
 export interface Wind {
-	speed?: decimal,
-	deg?: decimal
+	speed?: number,
+	deg?: number
 }
 
 export interface Main {
-	temp?: decimal,
+	temp?: number,
 	pressure?: number,
 	humidity?: number,
-	temp_min?: decimal,
-	temp_max?: decimal
+	temp_min?: number,
+	temp_max?: number
 }
