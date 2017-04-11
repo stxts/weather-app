@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
-import 'rxjs/Rx';
+import { Observable } from'rxjs/Rx';
+import { App } from './app';
 
 @Injectable()
 export class AppService {
@@ -14,10 +15,10 @@ export class AppService {
     private http: Http
   ){}
 
-  getCurrentWeather(city){
+  getCurrentWeather(city): Observable<App>{
     return this.http.get(this.testUrl + city + this.units + this.apiKey)
-               .map(res => res.json());
-  }  
+               .map((response: Response) => <App>response.json());
+   }  
 
   
 }
