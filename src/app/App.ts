@@ -22,5 +22,4 @@ export interface Main {
 	public humidity?: number,
 	public temp_min?: decimal,
 	public temp_max?: decimal
-
 }
